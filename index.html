@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link do CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Link do CSS do popup-->
+    <link rel="stylesheet" href="css/popup.css">
+    <!--Link do icone do site-->
+    <link rel="shortcut icon" href="img/icone.png" type="image/x-icon">
+    <title>Hummm Casada!</title>
+</head>
+
+<body>
+    <main>
+        <img src="img/diego.png" alt="Diegão" class="diego">
+        <img src="img/efeito.gif" alt="efeito baby" class="efeito">
+        <section class="content">
+            <h4>Cadastro de Casadas</h4>
+            <h2>Preencha com suas informações.</h2>
+            <form class="forms">
+                <!--Nome-->
+                <label>Nome:</label>
+                <input type="text" placeholder="Digite o seu nome." class="inputtext">
+                <!--Sobrenome-->
+                <label>Sobrenome:</label>
+                <input type="text" placeholder="Digite o seu sobrenome de casada." class="inputtext">
+                <!--Email-->
+                <label>Email:</label>
+                <input type="email" placeholder="Digite o seu email." class="inputtext">
+                <!--Tempo de Casada-->
+                <label>Há quanto tempo esta casada?</label>
+                <div class="tempocasda"><input type="radio">De 1 a 2 anos.</div>
+                <div class="tempocasda"><input type="radio">De 2 a 5 anos.</div>
+                <div class="tempocasda"><input type="radio">Mais de 5 anos.</div>
+                <!--Nivel-->
+                <label>Nivel de Danada:</label>
+                <select class="danada">
+                    <option>
+                        Selecione
+                    </option>
+                    <option>
+                        01
+                    </option>
+                    <option>
+                        02
+                    </option>
+                    <option>
+                        03
+                    </option>
+                    <option>
+                        04
+                    </option>
+                    <option>
+                        05
+                    </option>
+                </select>
+                <label>Selecione sua faixa de idade:</label>
+                <div class="idades">
+                    <div class="anos"><input type="checkbox">18 a 30</div>
+                    <div class="anos"><input type="checkbox">30 a 40</div>
+                    <div class="anos"><input type="checkbox">40 a 50</div>
+                </div>
+                <label>Conte um pouco da sua experiencia:</label>
+                <textarea class="depoimento" placeholder="Me conte os seus segredos..."></textarea>
+                <input class="btncadastrar" type="button" value="Cadastrar" id="btncadastrar" onclick="msgcadastrar()">
+            </form>
+        </section>
+    </main>
+
+    <main class="mainpop">
+        <div class="pop">
+            <img src="img/extra.jpg" class="iconpopup">
+            <h4>Bem vindo Casada</h4>
+            <input type="button" onclick="fecharpopup()">
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
